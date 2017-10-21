@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.eric.ericmodel.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+<com.example.eric.ericmodel.widget.PointCanvasView
+    android:id="@+id/pv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:visibility="gone"
+        >
+    <TextView
+        android:id="@+id/tv_drow_point"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="自动打点"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/tv_point"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="手动打点"
+        android:gravity="center"
+        />
+        <ImageView
+            android:id="@+id/iv_show"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            />
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/TextView02"
+    />
+</LinearLayout>
